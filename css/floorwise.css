@@ -1,0 +1,137 @@
+/* Main content container */
+main {
+  padding: 40px 20px; /* Add spacing around main content */
+  text-align: center; /* Center all text inside main */
+}
+
+/* Heading styling */
+main h2 {
+  font-family: 'Playfair Display', serif; /* Elegant font for headings */
+  font-size: 32px; /* Large font size */
+  color: #2e2e2e; /* Dark gray color */
+  margin-bottom: 30px; /* Space below heading */
+}
+
+/* Table wrapper for scrolling and spacing */
+.table-container {
+  overflow-x: auto; /* Enable horizontal scroll on small screens */
+  margin: 0 auto; /* Center the container */
+  width: 95%; /* Responsive width */
+  max-width: 1200px; /* Limit maximum width */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(90, 70, 61, 0.2); /* Soft shadow */
+}
+
+/* Table element */
+.shop-table {
+  width: 100%; /* Full width */
+  border-collapse: separate; /* Allow border spacing */
+  border-spacing: 0; /* Remove default spacing */
+  font-family: 'Hind', sans-serif; /* Clean readable font */
+  background-color: #fffaf5; /* Light background */
+  border-radius: 12px; /* Round table edges */
+  overflow: hidden; /* Prevent border overflow */
+}
+
+/* Table header and body cell styling */
+.shop-table th,
+.shop-table td {
+  border: 1px solid #d4cfc7; /* Light border for grid */
+  padding: 12px 15px; /* Cell spacing */
+  text-align: center; /* Center align content */
+  font-size: 15px; /* Standard text size */
+  color: #3c2f27; /* Soft brown text */
+}
+
+/* Header row background */
+.shop-table thead th {
+  background-color: #2e2e2e; /* Dark background for header */
+  font-weight: 600; /* Bold text */
+  color: #ffffff; /* White text for contrast */
+}
+
+/* Table body row background */
+.shop-table tbody td {
+  background-color: #fffdf9; /* Slightly off-white background for readability */
+}
+
+/* Rounded corners for last row */
+.shop-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 12px; /* Bottom left corner round */
+}
+
+.shop-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 12px; /* Bottom right corner round */
+}
+
+/* ============================= */
+/* ✅ RESPONSIVE MEDIA QUERIES ✅ */
+/* ============================= */
+
+/* Small Devices (≤ 600px) */
+@media (max-width: 600px) {
+  main {
+    padding: 30px 10px; /* Reduce padding on smaller screens */
+  }
+
+  main h2 {
+    font-size: 22px; /* Smaller heading */
+    margin-bottom: 20px; /* Less spacing below heading */
+  }
+
+  .table-container {
+    width: 100%; /* Full width for small screens */
+    overflow-x: auto; /* Allow horizontal scroll */
+    margin: 0 auto 30px; /* Bottom margin */
+    box-sizing: border-box; /* Include padding/border in width */
+  }
+
+  .shop-table {
+    width: 100%; /* Table takes full container width */
+    border-spacing: 0; /* No spacing */
+    font-size: 13px; /* Smaller text */
+  }
+
+  .shop-table th,
+  .shop-table td {
+    font-size: 13px; /* Smaller text */
+    padding: 8px 10px; /* Smaller padding */
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+
+  /* Footer becomes stacked and centered */
+  .footer-container {
+    flex-direction: column; /* Stack vertically */
+    gap: 25px; /* Space between columns */
+    text-align: center; /* Center text */
+    padding: 20px; /* Inner spacing */
+  }
+
+  .footer-column {
+    width: 100%; /* Full width on mobile */
+  }
+}
+
+/* Medium Devices (≤ 1024px) */
+@media (max-width: 1024px) {
+  main h2 {
+    font-size: 26px; /* Adjust heading size for medium screens */
+  }
+
+  .table-container {
+    width: 95%; /* Slightly reduce width */
+    max-width: 100%; /* Allow full container width */
+    margin: 0 auto 40px; /* Margin below table */
+  }
+
+  /* Footer layout adjusts for tablets */
+  .footer-container {
+    flex-wrap: wrap; /* Allow wrapping of columns */
+    justify-content: center; /* Center columns */
+  }
+
+  .footer-column {
+    flex: 1 1 45%; /* Each takes ~half the width */
+    text-align: center; /* Centered content */
+  }
+}

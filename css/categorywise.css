@@ -1,0 +1,85 @@
+/* Reuse loginpg.css for header/footer, font, form, button styling */
+@import url("./manageshop.css"); /* Reuse styles from manageshop.css */
+
+/* ============================= */
+/* Main Content Styling Section */
+/* ============================= */
+
+main {
+  padding: 40px 20px; /* Add padding around the main content */
+  text-align: center; /* Center align text inside main */
+}
+
+main h2 {
+  font-family: 'Playfair Display', serif; /* Elegant heading font */
+  font-size: 30px; /* Large heading size */
+  color: #5a463d; /* Brownish heading color */
+  margin-bottom: 25px; /* Space below heading */
+}
+
+/* ============================= */
+/* Filter Section Styling */
+/* ============================= */
+
+.filters {
+  display: flex; /* Arrange filter elements in a row */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  gap: 20px; /* Space between label and dropdown */
+  font-family: 'Hind', sans-serif; /* Clean sans-serif font */
+  margin-bottom: 25px; /* Space below filters */
+}
+
+.filters label {
+  font-weight: bold; /* Bold label text */
+  color: #5a463d; /* Brownish text color */
+}
+
+.filters select {
+  padding: 8px 12px; /* Inner spacing in dropdown */
+  font-size: 15px; /* Medium font size */
+  border-radius: 6px; /* Rounded corners */
+  border: 1px solid #ccc; /* Light grey border */
+  font-family: 'Hind', sans-serif; /* Consistent font with UI */
+  background-color: #fffdf9; /* Light cream background */
+  color: #3c2f27; /* Dark brown text */
+  outline: none; /* Remove focus border */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* ============================= */
+/* Table Container and Styling */
+/* ============================= */
+
+.table-container {
+  overflow-x: auto; /* Enable horizontal scroll on small screens */
+  width: 95%; /* Slight padding on sides */
+  max-width: 800px; /* Limit max width */
+  margin: 0 auto 50px; /* Centered with spacing below */
+}
+
+.shop-table {
+  width: 100%; /* Full width table */
+  border-collapse: collapse; /* Merge borders */
+  font-family: 'Hind', sans-serif; /* Font for table content */
+  background-color: #fffaf5; /* Very light cream background */
+}
+
+.shop-table th,
+.shop-table td {
+  border: 1px solid #d4cfc7; /* Light grey border between cells */
+  padding: 12px; /* Inner spacing in cells */
+  text-align: center; /* Center align text */
+  font-size: 15px; /* Readable font size */
+  color: #3c2f27; /* Dark brown text color */
+}
+
+.shop-table thead th {
+  background-color: #d4af37; /* Golden header background */
+  color: #2e2e2e; /* Dark charcoal text */
+  font-weight: 600; /* Semi-bold for headers */
+}
+
+.shop-table tbody tr:nth-child(even) {
+  background-color: #fffdf9; /* Alternate row coloring for better readability */
+}
