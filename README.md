@@ -129,11 +129,25 @@ Super Mall/
 ### 📸 Screenshots
 
 #### 🏠 Home Page
-![Home Page](./screenshots/homepage.png)
+![Home Page](./screenshots/homepg.png)
 
-#### 🛍️ Manage Shop Details
+#### 🏠 Login Page
+![Home Page](./screenshots/loginpg.png)
+
+#### 🏠 Admin Page
+![Home Page](./screenshots/admin.png)
+
+#### 🏠 Create Shop Page
+![Home Page](./screenshots/createshop.png)
+
+#### 🛍️ Manage Shop Details Page
 ![Manage Shop Details](./screenshots/manageshop.png)
 
-#### 🎁 Manage Offers
-![Manage Offers](./screenshots/manageoffers.png)
+#### 🏠 User Page
+![Home Page](./screenshots/user.png)
 
+#### 🏠 Shop Wise Details Page
+![Home Page](./screenshots/shopwisedetails.png)
+
+#### 🏠 Compare Page
+![Home Page](./screenshots/compare.png)
