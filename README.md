@@ -126,6 +126,34 @@ Super Mall/
 
 ---
 
+## ✅ Test Cases
+
+| Feature                     | Action Performed                                  | Expected Outcome                                           | Status |
+|-----------------------------|---------------------------------------------------|------------------------------------------------------------|--------|
+| Login - Admin               | Enter correct email & password                    | Redirects to admin dashboard                               | ✅     |
+| Login - Invalid User        | Enter wrong credentials                           | Shows login error                                          | ✅     |
+| Create Shop Details         | Fill and submit all fields                        | Shop gets added and form resets                            | ✅     |
+| Manage Shop Details         | Edit/Delete/View buttons                          | Performs corresponding action and updates table            | ✅     |
+| Manage Offer Details        | Edit/Delete buttons                               | Updates or deletes offers correctly                        | ✅     |
+| Manage Category & Floor     | View category/floor-wise shop grouping            | Displays shops grouped correctly                           | ✅     |
+| Category Wise Details       | Select a category                                 | Shows only shops under selected category                   | ✅     |
+| List of Shop Details        | Apply floor/category filters                      | Filters shop list as expected                              | ✅     |
+| Shop Wise Offers            | Select shop from dropdown                         | Shows offers related to that shop                          | ✅     |
+| Floor Wise Details          | Select floor from dropdown                        | Displays only shops available on selected floor            | ✅     |
+| Product Comparison          | Select multiple offers to compare                 | Displays side-by-side comparison                           | ✅     |
+| Logging                     | Perform any action (edit/delete/view)             | Entry created in `logs` collection in Firestore            | ✅     |
+| Responsive UI               | Open on mobile/tablet/laptop                      | Layout adapts properly across all screen sizes             | ✅     |
+| Animations                  | Load index/admin/user pages                       | AOS or CSS animations visible                              | ✅     |
+
+
+## 🌐 Live Demo
+
+You can view the live hosted version of **Urbanova – Shop Your Heart Out** here:
+
+🔗 [Urbanova Live Site](https://shrau1405.github.io/Urbanova/html/index.html)
+
+This deployment ensures easy access for merchants and users to explore the Super Mall features online.
+---
 ### 📸 Screenshots
 
 #### 🏠 Home Page
@@ -151,3 +179,4 @@ Super Mall/
 
 #### 🏠 Compare Page
 ![Home Page](./screenshots/compare.png)
+
